@@ -1,0 +1,21 @@
+{
+	"name": "ffmpeg-cropper-test",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/app.ts",
+	"scripts": {
+		"test": "ts-node src/test.ts"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/ffmpeg": "^1.0.4",
+		"nodemon": "^3.0.1",
+		"ts-node": "^10.9.1",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "^5.1.6"
+	},
+	"dependencies": {
+		"aws-sdk": "^2.1430.0"
+	}
+}
