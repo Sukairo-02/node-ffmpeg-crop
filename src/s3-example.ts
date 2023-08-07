@@ -14,7 +14,7 @@ const start = async () => {
 		})
 
 		const bucketStream = new stream.PassThrough()
-		s3.upload({ Bucket: '%outputBucketName%', Key: 'somekey', Body: bucketStream })
+		await s3.upload({ Bucket: '%outputBucketName%', Key: 'somekey', Body: bucketStream }).promise()
 		await crop(inputFileURL, bucketStream)
 	} catch (e) {
 		console.error(e)
